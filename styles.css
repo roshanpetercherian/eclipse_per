@@ -1,0 +1,115 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background-image: url(eclipse.jpg);
+    background-size: cover; /* This ensures the image covers the entire viewport */
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #fff;
+    
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Helvetica',sans-serif;
+}
+
+/* Main Content Container Styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Helvetica',sans-serif;
+}
+
+nav a:hover {
+    color: #ff9900; /* Change color on hover */
+}
+
+/* Section styles */
+section {
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #fff;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+
+section:nth-child(odd) h2 {
+    transform: translateX(-20px);
+}
+
+section.in-view h2 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
